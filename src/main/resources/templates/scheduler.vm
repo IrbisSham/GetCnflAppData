@@ -1,0 +1,95 @@
+<html>
+    <head>
+		<title>$i18n.getText("com.itzabota.plugins.getcnflappdata.title")</title>
+        <meta name="decorator" content="atl.admin">
+    </head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="10" border="0">
+    <tbody>
+        <tr>
+            <td>
+                <table class="jiraform maxWidth">
+                    <tbody>
+                        <tr>
+                            <td class="jiraformheader">
+                                <h3 class="formtitle">$i18n.getText("com.itzabota.plugins.getcnflappdata.instructions")</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="jiraformbody">
+                                <form method="post" action="GetCnflAppDataScheduler!reschedule.jspa">
+                                    <p>
+                                        <table>
+                                            <tr>
+                                                <td>$i18n.getText("com.itzabota.plugins.getcnflappdata.intervalCell")</td>
+                                                <td><input type="text" name="interval" value="$interval"></td>
+                                            </tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.encodingCell")</td>
+												<td><input type="text" name="encoding" value="$encoding"></td>
+											</tr>											
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.defPathTmpCell")</td>
+												<td><input type="text" name="defPathTmp" value="$defPathTmp"></td>
+											</tr>											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.fldCascadSelectAppKeeperNameCell")</td>
+												<td><input type="text" name="fldCascadSelectAppKeeperName" value="$fldCascadSelectAppKeeperName"></td>
+											</tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.fldAppNameCell")</td>
+												<td><input type="text" name="fldAppName" value="$fldAppName"></td>
+											</tr>
+											
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.fldKeeperNameCell")</td>
+												<td><input type="text" name="fldKeeperName" value="$fldKeeperName"></td>
+											</tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.confluenceUrlCell")</td>
+												<td><input type="text" name="confluenceUrl" value="$confluenceUrl"></td>
+											</tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.confluenceLoginCell")</td>
+												<td><input type="text" name="confluenceLogin" value="$confluenceLogin"></td>
+											</tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.confluencePasswordCell")</td>
+												<td><input type="text" name="confluencePassword" value="$confluencePassword"></td>
+											</tr>											
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.cssSelectorCell")</td>
+												<td><input type="text" name="cssSelector" value="$cssSelector"></td>
+											</tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.colAppCell")</td>
+												<td><input type="text" name="colApp" value="$colApp"></td>
+											</tr>
+											<tr>
+												<td>$i18n.getText("com.itzabota.plugins.getcnflappdata.colKeeperCell")</td>
+												<td><input type="text" name="colKeeper" value="$colKeeper"></td>
+											</tr>
+
+																						
+                                            <tr>
+                                                <td colspan="2"><input type="submit" value="$i18n.getText("com.itzabota.plugins.getcnflappdata.applyButton")"></td>
+                                            </tr>
+                                        </table>
+                                    </p>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="text-align: center;">$i18n.getText("com.itzabota.plugins.getcnflappdata.lastRun") <b>$lastRun</b></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
